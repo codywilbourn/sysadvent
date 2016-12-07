@@ -1,8 +1,6 @@
 ## Take That Vacation: Eliminate Alerts Dragging You Back to the Office
 
-It's mid afternoon, you just sat down for that holiday meal with your family and friends. Your phone goes off.
-
-You look at the number. Work, again.
+It's mid afternoon and you just sat down for that holiday meal with your family and friends. Your phone goes off and you look at the number. Work, again.
 
 Before you even read the text or answer the call with the robotic voice telling you about the latest problem, you're wondering to yourself "how long it will take?" Your relatives are only in-town for another day or two, before you have to take them to the airport. What if it goes off again later? A holiday potentially ruined.
 
@@ -12,20 +10,20 @@ __Don't Be Your Own Grinch__
 
 It's possible to engineer yourself and environment for success.
 
-Rome wasn't build in a day, and neither was your current alert setup. It  won't take a day to clean up either. But you can apply two simple verification rules to each of your alerts:
+Rome wasn't build in a day, and neither was your current alert setup. It won't take a day to clean up either. But you can apply two simple verification rules to each of your alerts:
 
 1. Is the alert actionable?
 2. Do you have to deal with the alert right now?
 
 
 ## Take inventory of your monitoring system
-Like that jumbled pile of SCSI and other ancient cables that are sitting gathering dust in your office that you should have thrown out but you're holding on to hoping to be useful _someday_, your monitoring is gathering dust too. Since you made and configured any given health check, your environment has changed. Code has changed, hardware swapped, resiliencies added. We've got to do a bit of spring cleaning.
+Like that jumbled pile of SCSI and other ancient cables that are sitting gathering dust in your office that you should have thrown out but you're holding on to hoping to be useful _someday_, your monitoring is gathering dust too. Since you made and configured the health checks, your environment has changed. Code has changed, hardware swapped, resiliencies added, we've got to do a bit of spring cleaning.
 
-You'll need some time to be able and go through your alerts. Block out some time on your calendar so you can work without interruption. Get away from your desk to avoid suprise visitors. Get someone to cover the alerts for an hour or two, so that way you're not going to get distracted by any false alarms.
+You'll need some time to be able and go through your alerts. Block out some time on your calendar so you can work without interruption. Get away from your desk to avoid surprise visitors. Get someone to cover the alerts for an hour or two, so you don't get distracted by any more false alarms.
 
 Many monitoring systems have reporting tools to tell you what the most frequent events are. This report is a great starting point for where to start cleaning things up. If your monitoring system doesn't have a prebuilt report or convenient export to CSV, which you could then manipulate with Excel's pivot tables, it may be possible to do a bit of scripting of the monitoring system's log file. Your favorite scripting language should be able to pull out all of the log lines relating to a notification being sent and give you some data that's workable.
 
-Is learning a scripting language is one of your New Year's resolution, or on that _someday_ list after the alerts stop nagging you every 15 minutes? Your email inbox is probably the next best source of the alerts you've been getting. After all, your most recent alerts are the ones most likely to bother you on your next vacation.
+Is learning a scripting language one of your New Year's resolutions, or on that _someday_ list after the alerts stop nagging you every 15 minutes? Your email inbox is probably the next best source of the alerts you've been getting. After all, your most recent alerts are the ones most likely to bother you on your next vacation.
 
 If you've been deleting the incoming notifications or really feel like doing a top to bottom cleaning of your monitoring system, you can just go down the list of checks.
 
@@ -47,9 +45,9 @@ Write out everything. Even if it's just "Call $VENDOR at 1-800... and open a sup
 
 The reason you write all the steps down is because you've just documented the fix. Boring, right? But documentation has got to be done and you're thinking about the alert anyway.
 
-Whether you put the fix in a wiki, a knowledge base, or in the alert notification itself is entirely up to you, your company's designated systems of record, and willingness to keep the instructions up to date. But you've just saved yourself from having to remember how to fix the issue, whether it's tomorrow afternoon, in the middle of the night, or on your next vacation. You can also use the documentation to train other employees so you're not the only person who knows how to fix the issue. Not being the only person who knows hows how to solve the issue is critical in your ability to take an uninterrupted vacation.
+Whether you put the fix in a wiki, a knowledge base, or in the alert notification itself is entirely up to you, your company's designated systems of record, and willingness to keep the instructions up to date. But you've just saved yourself from having to remember how to fix the issue, whether it's tomorrow afternoon, in the middle of the night, or on your next vacation. You can also use the documentation to train other employees so you're not the only person who knows how to fix the issue. Not being the only person who knows how to solve the issue is critical in your ability to take an uninterrupted vacation.
 
-Now sometimes alerts are used to notify you of events that happened, and you really want to know about the event, but the notification you're getting isn't an actionable alert. You're basically using your inbox as a system of record. That's fine, not everyone has the [ELK stack](http://sysadvent.blogspot.com/2015/12/day-5-elk-operations-and-administration.html) running or a Splunk subscription to forward these things to. But these events need to go somewhere that's not your Inbox so they stop causing you stress. Set up a email list or shared mailbox to send these events to, or use some smart email filters. This way you can still get the events but they're not front and center in your inbox every time you open your mail. You'll get a better understanding of when things are broken, since the single to noise ratio in your inbox will be higher.
+Now sometimes alerts are used to notify you of events that happened, and you really want to know about the event, but the notification you're getting isn't an actionable alert. You're basically using your inbox as a system of record. That's fine, not everyone has the [ELK stack](http://sysadvent.blogspot.com/2015/12/day-5-elk-operations-and-administration.html) running or a Splunk subscription to forward these things to. But these events need to go somewhere that's not your Inbox so they stop causing you stress. Set up a email list or shared mailbox to send these events to, or use some smart email filters. This way you can still get the events but they're not front and center in your inbox every time you open your mail. You'll get a better understanding of when things are broken, since the signal to noise ratio in your inbox will be higher.
 
 
 ## Do you need to deal with the alert right now?
@@ -57,13 +55,13 @@ This question is phrased like one of those True or False problems your teachers 
 
 __Do _you_ need to deal with this alert _right now___
 
-__You__: Are you the right person to deal with this alert? If you're a front line support responsible for escalating to the right person, this is going to be True. If you're on a small or single-person team, this is going to be True. However, if you're in an organization where there's a defined separation of duties and these alerts are going to the wrong place, then that alert needs to be corrected. Perhaps this is just a case of an overzealous email list -- all IT rather than network or desktop or server teams. Update the alert to go to the right people. This isn't just helping your workload, but also theirs, since misrouted alerts cost precious time when critical systems are down.
+__You__: Are you the right person to deal with this alert? If you're front line support responsible for escalating to the right person, this is going to be True. If you're on a small or single-person team, this is going to be True. However, if you're in an organization where there's a defined separation of duties and these alerts are going to the wrong place, then that alert needs to be corrected. Perhaps this is just a case of an overzealous email list -- all IT rather than network or desktop or server teams. Update the alert to go to the right people. This isn't just helping your workload, but also theirs, since misrouted alerts cost precious time when critical systems are down.
 
-__Right now__: There's two options for if your health check doesn't need to be dealt with right this moment. The first is to change the thresholds so the alert doesn't fire until it absolutely requires the action. The second option is to change your monitoring system so this event goes to a lower priority notification channel like chat or email, rather than contacting your pager or mobile phone. This change may require adjusting the thresholds down even further than you'd think, so you get sufficient advanced notice--letting you wait until after vacation to handle the issue.
+__Right now__: There's two options if your health check doesn't need to be dealt with right this moment. The first is to change the thresholds so the alert doesn't fire until it absolutely requires the action. The second option is to change your monitoring system so this event goes to a lower priority notification channel like chat or email, rather than contacting your pager or mobile phone. This change may require adjusting the thresholds down even further than you'd think, so you get sufficient advanced notice--letting you wait until after vacation to handle the issue.
 
 
 ## Improving the remaining alerts
-After going through your alerts you should be left with only the alerts that mean something. They're letting you know of bad things happening, and they're at least somewhat actionable. Your phone may still be noisy with the constant chime of incoming messages.
+After going through your alerts you should be left with only the alerts that mean something. They're letting you know of bad things happening, and they're at least somewhat actionable. Your phone may still be noisy with the constant chime of incoming messages though.
 
 (If you're holding on to any inactionable alerts, these are things you can do to help make the alert more actionable.)
 
@@ -79,11 +77,11 @@ If you can't get the right things measured, can you at least reduce the impact o
 Another example -- RAID arrays. Most arrays are setup such that they can lose at least one disk without issue. In a more built-out setup, you may have some hot spares so the array will automatically repair itself if a disk fails. Instead of paging on disk failure, consider only sending an email and send a pager alert when you run out of hot spares. This will ensure you know about all failed disks, but only need to take action when the system can't fix its own issue.
 
 ### Think automation
-Go back to the documentation you wrote earlier on how to fix the problem causing the alert. Does it seem like something some simple automation can do?
+Go back to the documentation you wrote earlier on how to fix the problem causing the alert. Does it seem like something that could be automated simply?
 
 Maybe when your disk fills up you go hunting for the largest file and delete that, or you force a log rotation. When your process crashes you try restarting it. When your webservers have too many concurrent users you spin up another host from your cloud provider.
 
-These are all actions that can be taken programmatically, and possibly worked into your monitoring system. Attempt to resolve the issue automatically, and if the issue cannot be resolved, or if the problem is reoccuring then notify. Now you know the computer has taken the most common resolution steps, and your advanced troubleshooting knowledge is required.
+These are all actions that can be taken programmatically, and possibly worked into your monitoring system. Attempt to resolve the issue automatically, and if the issue cannot be resolved, or if the problem is reoccurring then notify. Now you know the computer has taken the most common resolution steps, and your advanced troubleshooting knowledge is required.
 
 Generally automation works out in your favor, if you assume most off-hours alerts are going to take you at least 30 minutes to start up your computer, log in, verify the issue, and then resolve it.
 
@@ -96,7 +94,7 @@ Be careful with your automation, however. There are many pitfalls that lie down 
 
 Consider just some of the following questions as you design your solution:
 
-* What happens if the state keeps changing between bad and good?
+* What happens if the state keeps changing between bad and good, a condition known as flapping?
 * When _don't_ you want this fix to automatically take place?
 * What happens if the fix fails mid-step?
 * Will the automatic resolution conflict with any intentional work, like downtimes, upgrades, or patching?
@@ -127,7 +125,7 @@ Not everything needs to be running on a 24/7 basis. When have you made a special
 
 You'll need to work with the impacted groups, but it is possible to reduce the level of support from 24/7 to normal business hours. You'll respond as normal to problems, but only during the designated times. The business may need more or around-the-clock coverage during peak season or "crunch time", but your inbox will be better off the remainder of the year.
 
-Remember, there's a reason that your vendors charge more for faster support. The dollar cost for you or your organization covering everything 24/7 may not be immediately visible in your business in terms of wages, but it's paid by employees not getting enough rest or impacting their work-life balance.
+Remember, there's a reason that your vendors charge more for faster support. The dollar cost for you or your organization covering everything 24/7 may not be immediately visible to your business in terms of wages, but it's paid by employees not getting enough rest or the impact on their work-life balance.
 
 
 ## Don't steal your own holidays
