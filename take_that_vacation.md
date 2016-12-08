@@ -17,7 +17,7 @@ Rome wasn't build in a day, and neither was your current alert setup. It won't t
 
 
 ## Take inventory of your monitoring system
-Like that jumbled pile of SCSI and other ancient cables that are sitting gathering dust in your office that you should have thrown out but you're holding on to hoping to be useful _someday_, your monitoring is gathering dust too. Since you made and configured the health checks, your environment has changed. Code has changed, hardware swapped, resiliencies added, we've got to do a bit of spring cleaning.
+Like that jumbled pile of SCSI and other ancient cables that are sitting gathering dust in your office that you should have thrown out but you're holding on to hoping to be useful _someday_, your monitoring is gathering dust too. Since you made and configured the health checks, your environment has changed. Code has changed, hardware swapped, and resiliencies added--we've got to do a bit of spring cleaning.
 
 You'll need some time to be able and go through your alerts. Block out some time on your calendar so you can work without interruption. Get away from your desk to avoid surprise visitors. Get someone to cover the alerts for an hour or two, so you don't get distracted by any more false alarms.
 
