@@ -1,4 +1,6 @@
 ## Take That Vacation: Eliminate Alerts Dragging You Back to the Office
+Written By: Cody Wilbourn ([cody@codywilbourn.com](mailto:cody@codywilbourn.com))
+Edited By: Matt Jones ([@CaffeinatedEng](https://twitter.com/caffeinatedeng))
 
 It's mid afternoon and you just sat down for that holiday meal with your family and friends. Your phone goes off and you look at the number. Work, again.
 
@@ -44,9 +46,9 @@ You should have written instructions that look something like this:
 
 Write out everything. Even if it's just "Call $VENDOR at 1-800... and open a support case", that's still reinforcing the fact that this is actionable.
 
-The reason you write all the steps down is because you've just documented the fix. Boring, right? But documentation has got to be done and you're thinking about the alert anyway.
+The reason you write all the steps down is because you've just documented the fix, and it's the beginning of what could become a [runbook](https://en.wikipedia.org/wiki/Runbook). Boring, right? But documentation has got to be done and you're thinking about the alert anyway.
 
-Whether you put the fix in a wiki, a knowledge base, or in the alert notification itself is entirely up to you, your company's designated systems of record, and willingness to keep the instructions up to date. But you've just saved yourself from having to remember how to fix the issue, whether it's tomorrow afternoon, in the middle of the night, or on your next vacation. You can also use the documentation to train other employees so you're not the only person who knows how to fix the issue. Not being the only person who knows how to solve the issue is critical in your ability to take an uninterrupted vacation.
+Whether you put the fix instructions in a wiki, a knowledge base, or in the alert notification itself is entirely up to you, your company's designated systems of record, and willingness to keep the instructions up to date. But you've just saved yourself from having to remember how to fix the issue, whether it's tomorrow afternoon, in the middle of the night, or on your next vacation. You can also use the documentation to train other employees so you're not the only person who knows how to fix the issue. Not being the only person who knows how to solve the issue is critical in your ability to take an uninterrupted vacation.
 
 Now sometimes alerts are used to notify you of events that happened, and you really want to know about the event, but the notification you're getting isn't an actionable alert. You're basically using your inbox as a system of record. That's fine, not everyone has the [ELK stack](http://sysadvent.blogspot.com/2015/12/day-5-elk-operations-and-administration.html) running or a Splunk subscription to forward these things to. But these events need to go somewhere that's not your Inbox so they stop causing you stress. Set up a email list or shared mailbox to send these events to, or use some smart email filters. This way you can still get the events but they're not front and center in your inbox every time you open your mail. You'll get a better understanding of when things are broken, since the signal to noise ratio in your inbox will be higher.
 
@@ -126,7 +128,7 @@ Not everything needs to be running on a 24/7 basis. When have you made a special
 
 You'll need to work with the impacted groups, but it is possible to reduce the level of support from 24/7 to normal business hours. You'll respond as normal to problems, but only during the designated times. The business may need more or around-the-clock coverage during peak season or "crunch time", but your inbox will be better off the remainder of the year.
 
-Remember, there's a reason that your vendors charge more for faster support. The dollar cost for you or your organization covering everything 24/7 may not be immediately visible to your business in terms of wages, but it's paid by employees not getting enough rest or the impact on their work-life balance.
+Remember, there's a reason that your vendors charge more for faster support. The dollar cost for you or your organization covering everything 24/7 may not be immediately visible to your business in terms of wages, but it's paid by employees not getting enough rest or impacting their work-life balance.
 
 
 ## Don't steal your own holidays
