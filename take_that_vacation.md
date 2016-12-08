@@ -44,7 +44,7 @@ You should have written instructions that look something like this:
 
 Write out everything. Even if it's just "Call $VENDOR at 1-800... and open a support case", that's still reinforcing the fact that this is actionable.
 
-The reason you write all the steps down is because you've just documented the fix. Boring, right? But documentation has got to be done and you're thinking about the alert anyway.
+The reason you write all the steps down is because you've just documented the fix, and it's the beginning of what can become a [runbook](https://en.wikipedia.org/wiki/Runbook). Boring, right? But documentation has got to be done and you're thinking about the alert anyway.
 
 Whether you put the fix in a wiki, a knowledge base, or in the alert notification itself is entirely up to you, your company's designated systems of record, and willingness to keep the instructions up to date. But you've just saved yourself from having to remember how to fix the issue, whether it's tomorrow afternoon, in the middle of the night, or on your next vacation. You can also use the documentation to train other employees so you're not the only person who knows how to fix the issue. Not being the only person who knows how to solve the issue is critical in your ability to take an uninterrupted vacation.
 
