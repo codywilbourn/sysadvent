@@ -13,7 +13,7 @@ It's possible to engineer yourself and environment for success.
 Rome wasn't build in a day, and neither was your current alert setup. It won't take a day to clean up either. But you can apply two simple verification rules to each of your alerts:
 
 1. Is the alert actionable?
-2. Do you have to deal with the alert right now?
+1. Do you have to deal with the alert right now?
 
 
 ## Take inventory of your monitoring system
@@ -36,10 +36,11 @@ Write down all of the steps required to fix the issue in complete detail. If you
 You should have written instructions that look something like this:
 
 1. Connect to the server identified by alert
-2. Run X command to verify the problem and determine the cause
-    1. If it's <A> cause, do this
-    2. If it's <B> cause, do this instead
-3. Check the monitoring dashboard to make sure it's resolved
+1. Run X command to verify the problem and determine the cause
+    1. If \<A\>, do this
+    1. If \<B\>, do this
+    1. Else, do this
+1. Check the monitoring dashboard to make sure it's resolved
 
 Write out everything. Even if it's just "Call $VENDOR at 1-800... and open a support case", that's still reinforcing the fact that this is actionable.
 
