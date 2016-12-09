@@ -1,4 +1,5 @@
 ## Take That Vacation: Eliminate Alerts Dragging You Back to the Office
+
 Written By: Cody Wilbourn ([cody@codywilbourn.com](mailto:cody@codywilbourn.com))
 Edited By: Matt Jones ([@CaffeinatedEng](https://twitter.com/caffeinatedeng))
 
@@ -77,7 +78,7 @@ What are you really trying to measure for? Most of the time it's responsiveness.
 
 If you can't get the right things measured, can you at least reduce the impact of everything else that will result in the same symptoms? So for those Chef or Puppet runs, change the process priority so it doesn't make as much of an impact. No one cares if non-critical tasks take 30-45 more seconds to complete if that means your website is still fast. You might also have to provision more resources to reduce the impact. Spread the load out over more machines so any single machine is getting fewer requests than it was before and therefore less likely to hit the notification threshold.
 
-Another example -- RAID arrays. Most arrays are setup such that they can lose at least one disk without issue. In a more built-out setup, you may have some hot spares so the array will automatically repair itself if a disk fails. Instead of paging on disk failure, consider only sending an email and send a pager alert when you run out of hot spares. This will ensure you know about all failed disks, but only need to take action when the system can't fix its own issue.
+Another example -- RAID arrays. Most arrays are setup such that they can lose at least one disk without issue. In a more built-out setup, you may have some hot spares so the array will automatically repair itself if a disk fails. Instead of paging on disk failure, consider only sending an email for the failed disk and then send a pager alert when you run out of hot spares. This will ensure you know about all failed disks, but only need to take action when the system can't fix its own issue.
 
 ### Think automation
 Go back to the documentation you wrote earlier on how to fix the problem causing the alert. Does it seem like something that could be automated simply?
