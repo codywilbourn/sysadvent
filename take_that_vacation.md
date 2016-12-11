@@ -138,4 +138,3 @@ This whole process is as gradual or extreme as you'd like. But I encourage you t
 Consider it this way: your monitoring system is a constant reminder of the work you did or did not put into it. Not putting anything at all into monitoring will result in you never knowing if systems are down. Not putting enough work into the system can result in frequent alerts, dragging you back to the office after hours.
 
 Monitoring systems are a constant battle as your environment changes, but by keeping these strategies in mind you can help the future you enjoy the holidays without worrying about unstable systems and unnecessary alerts.
-
