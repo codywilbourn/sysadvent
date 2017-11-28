@@ -1,4 +1,5 @@
 Written by Cody Wilbourn ([@codywilbourn](twitter.com/codywilbourn))
+
 Edited by Kerim Satirli ([@ksatirli](twitter.com/ksatirli))
 
 Post-mortems are an industry standard process that happens after incidents and outages as a method of continuous learning and improvement. While the exact format varies from company to company, your post-mortem report typically addresses the Five W’s:
@@ -15,8 +16,7 @@ But if your “root cause” amounts to a *single* failure, you have stopped you
 ## Root Cause is Plural
 Like the word **data** is plural, the phrase “root cause” should be as well. There is never a singular *root cause*, but instead *root causes* that contribute to an incident. Furthering the plant metaphor, a root came from a seed, and in order to sprout, that seed needed sufficient nutrients, water, and sunlight. Failing to recognize those nutrients, water sources, and sunlight means you prematurely stopped your learning process. There are other roots growing in your field, maybe similar to the one remediated, maybe different, but feeding off of those same needs.
 
-
-!(A network of plant plant roots. CC-SA3.0 retrieved from https://commons.wikimedia.org/wiki/File:Cycads_root.png) [https://upload.wikimedia.org/wikipedia/commons/0/04/Cycads_root.png]
+![A network of plant plant roots. CC-SA3.0 retrieved from https://commons.wikimedia.org/wiki/File:Cycads_root.png]( https://upload.wikimedia.org/wikipedia/commons/0/04/Cycads_root.png)
 
 This isn’t just one root, there’s an entire system of roots.
 
@@ -27,7 +27,6 @@ Dig deeper. Start asking “Why?” from the root cause. This will unearth other
 
 ### A Simple Component Failure
 Probably one of the easiest apparent failures to diagnose are single component failures, such as a failed hard drive. The part fails, the server goes down, recovery processes follow and the post-mortem states the root cause was “Failed component. Remediated by replacing component.”
-
 
 Do not stop there. Why did the component fail? What was it that contributed to the failure?
 
@@ -49,7 +48,7 @@ This example corresponds to the [Space Shuttle Challenger explosion](https://en.
 
 Why did the Challenger explode? A single O-ring failed, causing a chain of events that ultimately led to the explosion.
 
-!(Gas leak on Space Shuttle Challenger. Public Domain, retrieved from https://en.wikipedia.org/wiki/Space_Shuttle_Challenger_disaster#/media/File:STS-51-L_grey_smoke_on_SRB.jpg)[https://upload.wikimedia.org/wikipedia/commons/4/42/STS-51-L_grey_smoke_on_SRB.jpg]
+![Gas leak on Space Shuttle Challenger. Public Domain, retrieved from https://en.wikipedia.org/wiki/Space_Shuttle_Challenger_disaster#/media/File:STS-51-L_grey_smoke_on_SRB.jpg](https://upload.wikimedia.org/wikipedia/commons/4/42/STS-51-L_grey_smoke_on_SRB.jpg)
 
 Did people throw up their hands and say “this stuff happens when you shoot rockets into space?” No, they didn’t. They, through the Rogers Commission, dug deeper.
 
@@ -82,8 +81,8 @@ That’s how you should react to an acceptable risk problem. “Today is the day
 Complex investigations require investigating multiple avenues. Mapping the effects and causes in a tree visualization helps understanding of the problems cascade into each other, and may overlap. Visualizations can help promote collaboration -- mapping the causes and effects on a whiteboard or with Post-It notes is an easy activity for the post-mortem team to engage in. It’s easy to draw another line and add in more contributing factors as they’re identified. Mapping also ensures that all of the root causes are fully explored and nothing was missed accidentally.
 
 
-!(A tree of causes and effects)[cause-effect-tree.png]
+![A tree of causes and effects](cause-effect-tree.png)
 
 The action items or other tasks required following up an incident will be to eliminate as many branches as possible, preferably the leaf nodes or one level up. Eliminating the root of the tree is the same as your current process -- it doesn’t ensure that these other contributing root causes won’t impact operations somewhere else in the future. Addressing as much of the problem surface as possible will maximize learnings and improvements, while minimizing the recurrence of issues.
 
-As Margaret Hamilton, [Apollo scientist and United States Presidential Medal of Freedom recipient](https://en.wikipedia.org/wiki/Margaret_Hamilton_(scientist) once said, “Learn from everyone and everything, including from that which you would least expect”. <sup>[source](https://www.safaribooksonline.com/library/view/site-reliability-engineering/9781491929117/preface01.html)</sup>. Explore every avenue available to maximize the benefits of the post-mortem process.
+As Margaret Hamilton, [Apollo scientist and United States Presidential Medal of Freedom recipient](https://en.wikipedia.org/wiki/Margaret_Hamilton_(scientist)) once said, “Learn from everyone and everything, including from that which you would least expect”. <sup>[source](https://www.safaribooksonline.com/library/view/site-reliability-engineering/9781491929117/preface01.html)</sup>. Explore every avenue available to maximize the benefits of the post-mortem process.
